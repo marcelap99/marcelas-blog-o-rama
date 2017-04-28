@@ -1,0 +1,24 @@
+<h1>This is a new session</h1>
+
+<div class="flash-message">
+      <% if flash[:notice] %>
+        <%= flash[:notice] %>
+      <% end %>
+</div>
+
+<h1>Sign In</h1>
+
+<%= form_for(:session, url: sessions_path) do |f| %>
+
+   <%= f.label "First Name" %>
+    <%= f.text_field :fname %>
+
+    <%= f.label "Last Name" %>
+    <%= f.text_field :lname %>
+
+   <%= f.label :password %>
+    <%= f.text_field :password %>
+
+ <%= f.submit "sign in" %>
+
+<% end %>
