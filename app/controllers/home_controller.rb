@@ -4,8 +4,7 @@ def index
 end
 
 def index
-  @title = 'About This Blog';
-  @content = 'This is the home page explaining what the blog-o-rama is all about';
+  @title = 'This is my Blog';
+  @content = 'In my Blog you can sign up, sign in, post, comment, and edit';
 end
-
 end
